@@ -1,0 +1,39 @@
+<form
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        class="magic-container"
+        magic="SpaContainer"
+        class="SpaContainer"
+        [ngStyle]="{'background-image': 'url(' + getStyle('SpaContainer', 'background') + ')'}"
+    >
+        <input
+            type="text"
+            formControlName="vDummyPark"
+            magic="vDummyPark"
+            class="vDummyPark"
+        />
+        <ndc-dynamic
+            magic="HaderPanel"
+            class="HaderPanel"
+            [ndcDynamicComponent]="getComp('HaderPanel')"
+            [ndcDynamicInputs]="getParameters('HaderPanel')"
+        >
+            </ndc-dynamic>
+            <ndc-dynamic
+                magic="MainMenu"
+                class="MainMenu"
+                [ndcDynamicComponent]="getComp('MainMenu')"
+                [ndcDynamicInputs]="getParameters('MainMenu')"
+            >
+                </ndc-dynamic>
+                <ndc-dynamic
+                    magic="MainCanvas"
+                    class="MainCanvas"
+                    [ndcDynamicComponent]="getComp('MainCanvas')"
+                    [ndcDynamicInputs]="getParameters('MainCanvas')"
+                >
+                    </ndc-dynamic>
+                    </div>
+                    </form>

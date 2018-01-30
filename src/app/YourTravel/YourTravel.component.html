@@ -1,0 +1,52 @@
+<form
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        class="magic-container"
+        magic="YourTravel"
+        class="YourTravel"
+        [ngStyle]="{'background-image': 'url(' + getStyle('YourTravel', 'background') + ')'}"
+    >
+        <input
+            type="text"
+            formControlName="ParkOnManage"
+            magic="ParkOnManage"
+            class="ParkOnManage"
+        />
+        <input
+            type="text"
+            formControlName="vTempPark"
+            magic="vTempPark"
+            class="vTempPark"
+        />
+        <div
+            magic="menuGroup"
+            class="menuGroup"
+            class="mgColor46"
+        >
+            <div *ngIf="isImageExists('MainHome')">
+                <img
+                    magic="MainHome"
+                    class="MainHome"
+                    [src]="getImage('MainHome')"
+                />
+            </div>
+            <input
+                type="button"
+                magic="ActionButton1"
+                class="ActionButton1"
+            />
+            <input
+                type="button"
+                magic="ActionButton2"
+                class="ActionButton2"
+            />
+            <input
+                type="button"
+                magic="ActionButton3"
+                class="ActionButton3"
+            />
+            </div>
+            </div>
+            </form>
